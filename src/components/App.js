@@ -6,21 +6,21 @@ function App() {
   return (
     <div className="App">
       <h1>Tooltip Demo</h1>
-      
+      <br></br>
       <Tooltip text="This is a tooltip">
-        <button>Hover over me</button>
+        <h2>Hover over me</h2>
       </Tooltip>
 
       <br /><br />
 
-      <Tooltip text="This is another tooltip">
-        <span style={{ color: 'blue', textDecoration: 'underline' }}>
+      <Tooltip text="This is another tooltip" >
+        <p style={{ color: 'blue', textDecoration: 'underline' }}>
           Hover over me to see another tooltip
-        </span>
+        </p>
       </Tooltip>
 
 <Tooltip text="Information about this icon">
-        <span style={{ fontSize: '24px' }}>ℹ️</span>
+        <span style={{ fontSize: '24px'}}></span>
       </Tooltip>
      
     </div>
