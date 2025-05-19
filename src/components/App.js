@@ -19,6 +19,9 @@ function App() {
         </span>
       </Tooltip>
 
+<Tooltip text="Information about this icon">
+        <span style={{ fontSize: '24px' }}>ℹ️</span>
+      </Tooltip>
      
     </div>
   );
