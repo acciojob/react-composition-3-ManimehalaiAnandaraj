@@ -4,7 +4,7 @@ import './../styles/App.css';
 
 function App() {
   return (
-    <div className="tooltip">
+    <div className="App">
      
       <Tooltip text="This is a tooltip">
         <h2>Hover over me</h2>
