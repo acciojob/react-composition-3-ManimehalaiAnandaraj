@@ -4,9 +4,8 @@ import './../styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Tooltip Demo</h1>
-      <br></br>
+    <div className="tooltip">
+     
       <Tooltip text="This is a tooltip">
         <h2>Hover over me</h2>
       </Tooltip>
@@ -14,7 +13,7 @@ function App() {
       <br /><br />
 
       <Tooltip text="This is another tooltip" >
-        <p style={{ color: 'blue', textDecoration: 'underline' }}>
+        <p>
           Hover over me to see another tooltip
         </p>
       </Tooltip>
