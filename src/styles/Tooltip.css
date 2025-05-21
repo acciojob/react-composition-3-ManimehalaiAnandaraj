@@ -1,28 +1,30 @@
-.tooltip-container {
-   margin-top: 100px; 
-  position: relative;
-  display: inline-block; 
-}
-
-
-.tooltiptext {
-  visibility: visible;
-  width: 120px; /* Adjust width as needed */
-  background-color: rgb(245, 11, 11); /* Tooltip background color */
-  color: #fff; /* Tooltip text color */
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Position it above the tooltip trigger */
-  left: 50%;
-  margin-left: -60px; /* Center the tooltip */
-  opacity: 0.8; /* Slightly transparent */
-  transition: opacity 0.3s; /* Smooth transition */
-}
-
+Tooltip.css
 .tooltip {
-   
-  cursor: pointer; /* Change cursor to pointer on hover */
-}
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltiptext {
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .tooltiptext.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .tooltiptext.hidden {
+    opacity: 0;
+  }
