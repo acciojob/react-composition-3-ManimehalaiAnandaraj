@@ -9,12 +9,12 @@ function App() {
    <div>
     
     <h2>
-     <Tooltip text="This is a tooltip">
+     <Tooltip text="This is a tooltip" aria-label="Tooltip for heading">
         Hover over me 
       </Tooltip></h2>
 
       <p>
-      <Tooltip text="This is another tooltip">
+      <Tooltip text="This is another tooltip" aria-label="Tooltip for paragraph">
           Hover over me to see another tooltip
       </Tooltip> </p>
     
