@@ -11,11 +11,11 @@ const Tooltip = ({ text, children }) => {
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false) }
       >
-        {children}
+       <p>{children}</p> 
       </div>
       {isVisible && (
         <div className="tooltiptext">
-          {text}
+         <p>{text}</p> 
         </div>
       )}
     </div>

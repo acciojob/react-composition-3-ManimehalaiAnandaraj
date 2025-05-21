@@ -5,12 +5,12 @@ import './../styles/App.css';
 function App() {
   return (
     <div className="App">
-      <h2>Tooltip</h2>
-      <div>
+            <div>
       <Tooltip text="This is a tooltip">
         <h2>Hover over me</h2>
       </Tooltip>
       </div>
+      
       <div>
       <Tooltip text="This is another tooltip">
         <p>
