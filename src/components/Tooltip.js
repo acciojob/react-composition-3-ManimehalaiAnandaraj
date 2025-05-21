@@ -4,15 +4,12 @@ import './../styles/Tooltip.css';
 const Tooltip = ({ text, children }) => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const showTooltip = () => setIsVisible(true);
-  const hideTooltip = () => setIsVisible(false);
-
   return (
     <div className="tooltip-container">
       <div 
         className="tooltip" 
-        onMouseEnter={showTooltip}
-        onMouseLeave={hideTooltip}
+        onMouseEnter={() => setIsVisible(true)}
+        onMouseLeave={() => setIsVisible(false) }
       >
         {children}
       </div>
