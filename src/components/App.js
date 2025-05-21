@@ -12,17 +12,14 @@ function App() {
       </Tooltip></h2>
       </div>
 
-      <div>
+      <div><p>
       <Tooltip text="This is another tooltip">
-        <p>
+        
           Hover over me to see another tooltip
-        </p>
-      </Tooltip>
+       
+      </Tooltip> </p>
+    </div>
     
-
-      <Tooltip text="Information about this icon">
-        <span style={{ fontSize: '24px', cursor: 'pointer' }}>🔍</span> {/* Added an icon */}
-      </Tooltip></div>
     </div>
   );
 }
